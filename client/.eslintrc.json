@@ -22,7 +22,9 @@
   "plugins": ["react", "@typescript-eslint", "react-hooks", "jest"],
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "typescript": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
     }
   },
   "rules": {

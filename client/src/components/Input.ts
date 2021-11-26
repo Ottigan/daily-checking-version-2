@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const InputText = styled.input`
+const Input = styled.input`
   height: 2rem;
   padding: 5px;
   margin-bottom: 1rem;
@@ -9,4 +9,4 @@ const InputText = styled.input`
   background-color: #fff;
 `;
 
-export default InputText;
+export default Input;
