@@ -17,10 +17,10 @@ const PrivateRoute = ({ component: RouteComponent, ...rest }: Props) => {
       {...rest}
       render={(routeProps) =>
         currentUser ? (
-          <div>
+          <>
             <Navbar />
-            <RouteComponent {...routeProps} />
-          </div>
+            <RouteComponent {...routeProps} currentUser={currentUser} />
+          </>
         ) : (
           <Redirect to="/" />
         )

@@ -1,5 +1,5 @@
 import { useEffect, useState, createContext, ReactNode } from 'react';
-import { currentUserContext } from '../definitions';
+import { CurrentUserContext } from '../definitions';
 import { auth } from './base';
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 
 interface AuthContextInterface {
   loading: boolean;
-  currentUser: currentUserContext;
+  currentUser: CurrentUserContext;
 }
 
 export const AuthContext = createContext<AuthContextInterface>({

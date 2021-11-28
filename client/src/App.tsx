@@ -16,6 +16,12 @@ const GlobalStyles = styled.createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   }
@@ -24,6 +30,52 @@ const GlobalStyles = styled.createGlobalStyle`
   body,
   #root {
     height: 100%;
+  }
+
+  .table-rounded {
+    border-collapse: separate;
+    border-spacing: 0;
+
+    thead {
+      tr:first-of-type th {
+        border-bottom-width: 1px;
+        border-right-width: 0;
+
+        &:first-of-type {
+          border-top-left-radius: 0.25rem;
+        }
+
+        &:last-of-type {
+          border-top-right-radius: 0.25rem;
+          border-right-width: 1px;
+        }
+      }
+    }
+
+    tbody {
+      tr td {
+        border-width: 0px 0px 1px 1px;
+
+        &:last-child {
+          border-right-width: 1px;
+        }
+      }
+
+      & tr:last-of-type {
+        td {
+          border-bottom-width: 1px;
+
+          &:first-of-type {
+            border-right-width: 0;
+            border-bottom-left-radius: 0.25rem;
+          }
+          &:last-of-type {
+            border-right-width: 1px;
+            border-bottom-right-radius: 0.25rem;
+          }
+        }
+      }
+    }
   }
 `;
 

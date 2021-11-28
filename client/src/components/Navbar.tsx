@@ -11,7 +11,8 @@ const StyledNavbar = styled.nav`
 
   img {
     margin: 2px 0px 0px 15px;
-    height: 80%;
+    height: 75%;
+    width: auto;
   }
 
   .logout-btn {
@@ -21,7 +22,7 @@ const StyledNavbar = styled.nav`
 `;
 
 const Navbar = () => (
-  <StyledNavbar>
+  <StyledNavbar className="mb-5">
     <img src={logo} alt="Daily Checking Logo" />
     <Button type="button" onClick={() => auth.signOut()} className="logout-btn">
       Sign Out

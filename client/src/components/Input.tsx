@@ -5,8 +5,8 @@ const Input = styled.input`
   padding: 5px;
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #000;
-  background-color: #fff;
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
 `;
 
 export default Input;
