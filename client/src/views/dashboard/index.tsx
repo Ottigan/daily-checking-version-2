@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-unused-vars */
 import { RowObjects, UserDocument } from 'definitions';
 import { User } from 'firebase/auth';
 import { getFirestore, doc, onSnapshot } from 'firebase/firestore';
